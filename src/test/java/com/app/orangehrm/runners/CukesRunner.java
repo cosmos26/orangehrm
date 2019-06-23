@@ -9,7 +9,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		tags = "@tag1",
 		features = { "src/test/resources/com/orangehrm/features" }, 
 		glue = "com/orangehrm/stepdefinitions",
-		dryRun = true
+		dryRun = false
 )
 
 public class CukesRunner extends AbstractTestNGCucumberTests  {
