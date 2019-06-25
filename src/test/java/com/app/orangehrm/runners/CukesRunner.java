@@ -8,7 +8,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		"json:target/cucumber.json", "rerun:target/rerun.txt" }, 
 		tags = "@tag1",
 		features = { "src/test/resources/com/orangehrm/features" }, 
-		glue = "com/orangehrm/stepdefinitions",
+		glue = "com/app/orangehrm/stepdefinitions",
 		dryRun = false
 )
 
