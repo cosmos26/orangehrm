@@ -12,9 +12,19 @@ public class LoginPage {
 		return element;
 	}
 	
-	public static WebElement passwordFIeld (WebDriver driver) {
+	public static void fillLoginField(WebDriver driver, String login) {
+		element = loginField(driver);
+		element.sendKeys(login);
+	}
+	
+	public static WebElement passwordField (WebDriver driver) {
 		element = driver.findElement(By.name("txtPassword"));
 		return element;
+	}
+	
+	public static void fillPasswordField(WebDriver driver, String password) {
+		element = passwordField(driver);
+		element.sendKeys(password);
 	}
 	
 	public static WebElement loginButton (WebDriver driver) {

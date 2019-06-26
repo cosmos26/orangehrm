@@ -12,9 +12,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
-import com.app.orangehrm.pages.LoginPage;
+import com.app.orangehrm.pages.*;
 
-public class CreatNewEmp {
+public class TestCreateEmployee {
 	
 	private String baseUrl = "https://cosmostech-trials65.orangehrmlive.com/auth/login";
 	private WebDriver driver;
@@ -25,18 +25,29 @@ public class CreatNewEmp {
   	driver.manage().window().maximize();
   	driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
   	driver.get(baseUrl);
+   
+    LoginPage.fillLoginField(driver, "Admin");	
+    LoginPage.fillPasswordField(driver, "T9@rZ5nrZA"); 
+    LoginPage.clickLogin(driver);
   }
-  
+    
   @Test
-  public void test() {
-  	LoginPage.loginField(driver).sendKeys("Admin");
-  	LoginPage.passwordFIeld(driver).sendKeys("T9@rZ5nrZA"); 
-  	LoginPage.clickLogin(driver);
+  public void createEmployee() throws Exception {
+  	LeftPanelMenu.clickPIM(driver);
+  	Thread.sleep(2000);
+  	LeftPanelMenu.clickaddEmployee(driver);
+    Thread.sleep(2000);
+  	WindowAddEmp.fillFirstName(driver, "Michael");
+  	WindowAddEmp.fillLastName(driver, "Huy");
+  	//WindowAddEmp.clickLocationNY(driver);
+  	//WindowAddEmp.clickNextButton(driver);
+  	
   }
-
+ 
+  
   @AfterTest
   public void afterTest() {
-  	driver.close();
+  	//driver.close();
   }
 
 }
