@@ -2,39 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9215" started-at="2019-06-25T17:00:14Z" finished-at="2019-06-25T17:00:24Z">
+  <suite name="Default suite" duration-ms="14830" started-at="2019-06-26T11:13:50Z" finished-at="2019-06-26T11:14:05Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@5702b3b1]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="9215" started-at="2019-06-25T17:00:14Z" finished-at="2019-06-25T17:00:24Z">
-      <class name="com.app.orangehrm.runners.CukesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@5702b3b1]" name="setUpClass" is-config="true" duration-ms="157" started-at="2019-06-25T17:00:14Z" finished-at="2019-06-25T17:00:15Z">
+    <test name="Default test" duration-ms="14830" started-at="2019-06-26T11:13:50Z" finished-at="2019-06-26T11:14:05Z">
+      <class name="testngclasses.CreatNewEmp">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testngclasses.CreatNewEmp@1e397ed7]" name="beforeTest" is-config="true" duration-ms="8542" started-at="2019-06-26T11:13:50Z" finished-at="2019-06-26T11:13:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@5702b3b1]" name="runScenario" duration-ms="8953" started-at="2019-06-25T17:00:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-06-25T17:00:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["dfdfdf"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["dgfgfg"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:testngclasses.CreatNewEmp@1e397ed7]" name="test" duration-ms="4117" started-at="2019-06-26T11:13:59Z" finished-at="2019-06-26T11:14:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@5702b3b1]" name="tearDownClass" is-config="true" duration-ms="45" started-at="2019-06-25T17:00:24Z" finished-at="2019-06-25T17:00:24Z">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testngclasses.CreatNewEmp@1e397ed7]" name="afterTest" is-config="true" duration-ms="2145" started-at="2019-06-26T11:14:03Z" finished-at="2019-06-26T11:14:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.app.orangehrm.runners.CukesRunner -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- testngclasses.CreatNewEmp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
