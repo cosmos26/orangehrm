@@ -57,9 +57,7 @@ public class TestCreateEmployee {
   	Thread.sleep(2000);
   	WindowAddEmp.chooseUnitOne(driver);
   	Thread.sleep(2000);
-  	WindowAddEmp.clickSaveButton(driver);
-  	
-  	
+  	WindowAddEmp.clickSaveButton(driver); 	 	
   }
  
   
