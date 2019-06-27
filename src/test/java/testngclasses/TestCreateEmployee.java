@@ -36,11 +36,29 @@ public class TestCreateEmployee {
   	LeftPanelMenu.clickPIM(driver);
   	Thread.sleep(2000);
   	LeftPanelMenu.clickaddEmployee(driver);
-    Thread.sleep(2000);
+    Thread.sleep(7000);
   	WindowAddEmp.fillFirstName(driver, "Michael");
   	WindowAddEmp.fillLastName(driver, "Huy");
-  	//WindowAddEmp.clickLocationNY(driver);
-  	//WindowAddEmp.clickNextButton(driver);
+  	WindowAddEmp.clickDropdown(driver);
+  	Thread.sleep(2000);
+  	WindowAddEmp.clickAU(driver);
+  	WindowAddEmp.clickNextButton(driver);
+  	Thread.sleep(15000);
+  	WindowAddEmp.clickNextButton2(driver);
+  	Thread.sleep(15000);
+  	WindowAddEmp.clickDropdownRegion(driver);
+  	WindowAddEmp.chooseRegionOne(driver);
+  	Thread.sleep(2000);
+  	WindowAddEmp.clickDropdownFTE(driver);
+  	Thread.sleep(2000);
+  	WindowAddEmp.chooseZeroPointFive(driver);
+  	Thread.sleep(2000);
+  	WindowAddEmp.clickDropdownTemp(driver);
+  	Thread.sleep(2000);
+  	WindowAddEmp.chooseUnitOne(driver);
+  	Thread.sleep(2000);
+  	WindowAddEmp.clickSaveButton(driver);
+  	
   	
   }
  
