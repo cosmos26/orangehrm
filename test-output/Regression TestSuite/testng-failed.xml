@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Regression TestSuite]">
-  <test thread-count="5" name="Application test(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Regression TestSuite]">
+  <test thread-count="5" verbose="2" name="Application test(failed)">
     <classes>
-      <class name="testngclasses.TestLoginPage">
-        <methods>
-          <include name="login"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- testngclasses.TestLoginPage -->
-      <class name="testngclasses.TestCreateEmployee">
+      <class name="com.app.orangehrm.testngclasses.TestCreateEmployee">
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="createEmployee"/>
         </methods>
-      </class> <!-- testngclasses.TestCreateEmployee -->
+      </class> <!-- com.app.orangehrm.testngclasses.TestCreateEmployee -->
     </classes>
   </test> <!-- Application test(failed) -->
 </suite> <!-- Failed suite [Regression TestSuite] -->

@@ -2,24 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54197" started-at="2019-06-28T01:54:17Z" finished-at="2019-06-28T01:55:11Z">
+  <suite name="Default suite" duration-ms="13514" started-at="2019-06-30T18:24:44Z" finished-at="2019-06-30T18:24:57Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@20322d26]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="54197" started-at="2019-06-28T01:54:17Z" finished-at="2019-06-28T01:55:11Z">
-      <class name="com.app.orangehrm.testngclasses.TestCreateEmployee">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.app.orangehrm.testngclasses.TestCreateEmployee@7085bdee]" name="beforeTest" is-config="true" duration-ms="10542" started-at="2019-06-28T01:54:17Z" finished-at="2019-06-28T01:54:28Z">
+    <test name="Default test" duration-ms="13514" started-at="2019-06-30T18:24:44Z" finished-at="2019-06-30T18:24:57Z">
+      <class name="com.app.orangehrm.runners.CukesRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@20322d26]" name="setUpClass" is-config="true" duration-ms="185" started-at="2019-06-30T18:24:44Z" finished-at="2019-06-30T18:24:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="createEmployee()[pri:0, instance:com.app.orangehrm.testngclasses.TestCreateEmployee@7085bdee]" name="createEmployee" duration-ms="43627" started-at="2019-06-28T01:54:28Z" finished-at="2019-06-28T01:55:11Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@20322d26]" name="runScenario" duration-ms="13010" started-at="2019-06-30T18:24:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-06-30T18:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can login application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete Employee"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createEmployee -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.app.orangehrm.testngclasses.TestCreateEmployee@7085bdee]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-06-28T01:55:11Z" finished-at="2019-06-28T01:55:11Z">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="262" started-at="2019-06-30T18:24:57Z" finished-at="2019-06-30T18:24:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.app.orangehrm.testngclasses.TestCreateEmployee -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.app.orangehrm.runners.CukesRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
