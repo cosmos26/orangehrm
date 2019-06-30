@@ -64,11 +64,10 @@ public class TestCreateEmployee {
   	Thread.sleep(5000);
   	WindowAddEmp.clickSaveButton(Driver.getDriver()); 	 	
   }
- 
-  
+   
   @AfterTest
   public void afterTest() {
-  	//driver.close();
+  	Driver.getDriver().close();
   }
 
 }

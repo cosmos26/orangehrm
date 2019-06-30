@@ -3,9 +3,20 @@ package com.app.orangehrm.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+import com.app.orangehrm.utilities.Driver;
 
 public class LoginPage {
+	private WebDriver driver;
+
 	public static WebElement element = null;
+	public String expectedPageTitle="OrangeHRM";
+
+	public LoginPage() {
+		this.driver = Driver.getDriver();
+		PageFactory.initElements(driver, this);
+	}
 	
 	public static WebElement loginField (WebDriver driver) {
 		element = driver.findElement(By.name("txtUsername"));

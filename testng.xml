@@ -1,8 +1,9 @@
-<suite name = "Regression TestSuite">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Regression TestSuite" verbose = "2">
 <test name = "Application test">
 	<classes>
-		<class name = "testngclasses.TestLoginPage"></class>
-		<class name = "testngclasses.TestCreateEmployee"></class>
+		<!--<class name = "com.app.orangehrm.testngclasses.TestLoginPage"></class> -->
+		<class name = "com.app.orangehrm.testngclasses.TestCreateEmployee"></class>
 	</classes>
 </test>
 
