@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56802" started-at="2019-06-28T00:45:04Z" finished-at="2019-06-28T00:46:01Z">
+  <suite name="Default suite" duration-ms="54197" started-at="2019-06-28T01:54:17Z" finished-at="2019-06-28T01:55:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56802" started-at="2019-06-28T00:45:04Z" finished-at="2019-06-28T00:46:01Z">
+    <test name="Default test" duration-ms="54197" started-at="2019-06-28T01:54:17Z" finished-at="2019-06-28T01:55:11Z">
       <class name="com.app.orangehrm.testngclasses.TestCreateEmployee">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.app.orangehrm.testngclasses.TestCreateEmployee@42dafa95]" name="beforeTest" is-config="true" duration-ms="11733" started-at="2019-06-28T00:45:04Z" finished-at="2019-06-28T00:45:16Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.app.orangehrm.testngclasses.TestCreateEmployee@7085bdee]" name="beforeTest" is-config="true" duration-ms="10542" started-at="2019-06-28T01:54:17Z" finished-at="2019-06-28T01:54:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="createEmployee()[pri:0, instance:com.app.orangehrm.testngclasses.TestCreateEmployee@42dafa95]" name="createEmployee" duration-ms="45035" started-at="2019-06-28T00:45:16Z" finished-at="2019-06-28T00:46:01Z">
+        <test-method status="PASS" signature="createEmployee()[pri:0, instance:com.app.orangehrm.testngclasses.TestCreateEmployee@7085bdee]" name="createEmployee" duration-ms="43627" started-at="2019-06-28T01:54:28Z" finished-at="2019-06-28T01:55:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createEmployee -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.app.orangehrm.testngclasses.TestCreateEmployee@42dafa95]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-06-28T00:46:01Z" finished-at="2019-06-28T00:46:01Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.app.orangehrm.testngclasses.TestCreateEmployee@7085bdee]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-06-28T01:55:11Z" finished-at="2019-06-28T01:55:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
