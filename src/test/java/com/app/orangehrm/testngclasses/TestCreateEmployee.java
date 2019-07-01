@@ -30,9 +30,9 @@ public class TestCreateEmployee {
   	Driver.getDriver().manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
   	Driver.getDriver().get(ConfigurationReader.getProperty("baseurl"));
    
-    LoginPage.fillLoginField(Driver.getDriver(), ConfigurationReader.getProperty("username"));	
-    LoginPage.fillPasswordField(Driver.getDriver(), ConfigurationReader.getProperty("password")); 
-    LoginPage.clickLogin(Driver.getDriver());
+//    LoginPage.fillLoginField(Driver.getDriver(), ConfigurationReader.getProperty("username"));	
+//    LoginPage.fillPasswordField(Driver.getDriver(), ConfigurationReader.getProperty("password")); 
+//    LoginPage.clickLogin(Driver.getDriver());
   }
     
   @Test
@@ -41,28 +41,28 @@ public class TestCreateEmployee {
   	BrowserUtils.waitForClickablility(LeftPanelMenu.element, 3);
   	LeftPanelMenu.clickaddEmployee(Driver.getDriver());
   
-    BrowserUtils.waitForVisibility(By.id("firstName"), 10);
-  	WindowAddEmp.fillFirstName(Driver.getDriver(), "Michael");
-  	WindowAddEmp.fillLastName(Driver.getDriver(), "Huy");
-  	WindowAddEmp.clickDropdown(Driver.getDriver());
-  	BrowserUtils.waitForVisibility(WindowAddEmp.element, 5);
-  	WindowAddEmp.clickAU(Driver.getDriver());
-  	WindowAddEmp.clickNextButton(Driver.getDriver());
-  	Thread.sleep(5000);
-  	WindowAddEmp.clickNextButton2(Driver.getDriver());
-  	Thread.sleep(5000);
-  	WindowAddEmp.clickDropdownRegion(Driver.getDriver());
-  	WindowAddEmp.chooseRegionOne(Driver.getDriver());
-  	Thread.sleep(5000);
-  	WindowAddEmp.clickDropdownFTE(Driver.getDriver());
-  	Thread.sleep(5000);
-  	WindowAddEmp.chooseZeroPointFive(Driver.getDriver());
-  	Thread.sleep(5000);
-  	WindowAddEmp.clickDropdownTemp(Driver.getDriver());
-  	Thread.sleep(5000);
-  	WindowAddEmp.chooseUnitOne(Driver.getDriver());
-  	Thread.sleep(5000);
-  	WindowAddEmp.clickSaveButton(Driver.getDriver()); 	 	
+//    BrowserUtils.waitForVisibility(By.id("firstName"), 10);
+//  	WindowAddEmp.fillFirstName(Driver.getDriver(), "Michael");
+//  	WindowAddEmp.fillLastName(Driver.getDriver(), "Huy");
+//  	WindowAddEmp.clickDropdown(Driver.getDriver());
+//  	BrowserUtils.waitForVisibility(WindowAddEmp.element, 5);
+//  	WindowAddEmp.clickAU(Driver.getDriver());
+//  	WindowAddEmp.clickNextButton(Driver.getDriver());
+//  	Thread.sleep(5000);
+//  	WindowAddEmp.clickNextButton2(Driver.getDriver());
+//  	Thread.sleep(5000);
+//  	WindowAddEmp.clickDropdownRegion(Driver.getDriver());
+//  	WindowAddEmp.chooseRegionOne(Driver.getDriver());
+//  	Thread.sleep(5000);
+//  	WindowAddEmp.clickDropdownFTE(Driver.getDriver());
+//  	Thread.sleep(5000);
+//  	WindowAddEmp.chooseZeroPointFive(Driver.getDriver());
+//  	Thread.sleep(5000);
+//  	WindowAddEmp.clickDropdownTemp(Driver.getDriver());
+//  	Thread.sleep(5000);
+//  	WindowAddEmp.chooseUnitOne(Driver.getDriver());
+//  	Thread.sleep(5000);
+//  	WindowAddEmp.clickSaveButton(Driver.getDriver()); 	 	
   }
    
   @AfterTest
