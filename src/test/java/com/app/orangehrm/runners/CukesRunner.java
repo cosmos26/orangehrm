@@ -6,10 +6,11 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(plugin = { "pretty", "html:target/cucumber-report",
 		"json:target/cucumber.json", "rerun:target/rerun.txt" }, 
-		tags = "@addEmployee",
+		tags = "@regression",
 		features = { "src/test/resources/com/orangehrm/features" }, 
 		glue = "com/app/orangehrm/stepdefinitions",
 		dryRun = false
+		
 )
 
 public class CukesRunner extends AbstractTestNGCucumberTests  {
