@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30207" started-at="2019-07-29T22:28:56Z" finished-at="2019-07-29T22:29:26Z">
+  <suite name="Default suite" duration-ms="43892" started-at="2019-08-02T16:54:57Z" finished-at="2019-08-02T16:55:40Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="30207" started-at="2019-07-29T22:28:56Z" finished-at="2019-07-29T22:29:26Z">
+    <test name="Default test" duration-ms="43892" started-at="2019-08-02T16:54:57Z" finished-at="2019-08-02T16:55:40Z">
       <class name="com.app.orangehrm.runners.CukesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="setUpClass" is-config="true" duration-ms="143" started-at="2019-07-29T22:28:56Z" finished-at="2019-07-29T22:28:56Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="setUpClass" is-config="true" duration-ms="128" started-at="2019-08-02T16:54:57Z" finished-at="2019-08-02T16:54:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="10667" started-at="2019-07-29T22:28:56Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-07-29T22:29:06Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="16627" started-at="2019-08-02T16:54:57Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-02T16:55:13Z">
           <params>
             <param index="0">
               <value>
@@ -23,30 +23,30 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["To add a new user"]]>
+                <![CDATA["To Add a New User"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="11581" started-at="2019-07-29T22:29:06Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-07-29T22:29:18Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="10963" started-at="2019-08-02T16:55:13Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-02T16:55:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["As an User can login"]]>
+                <![CDATA["Delete an user in the table"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["To add a new user"]]>
+                <![CDATA["Delete an User"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="7663" started-at="2019-07-29T22:29:18Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-07-29T22:29:26Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="6487" started-at="2019-08-02T16:55:24Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-02T16:55:31Z">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="tearDownClass" is-config="true" duration-ms="76" started-at="2019-07-29T22:29:26Z" finished-at="2019-07-29T22:29:26Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="9550" started-at="2019-08-02T16:55:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-02T16:55:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search User By Username"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="tearDownClass" is-config="true" duration-ms="72" started-at="2019-08-02T16:55:40Z" finished-at="2019-08-02T16:55:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
