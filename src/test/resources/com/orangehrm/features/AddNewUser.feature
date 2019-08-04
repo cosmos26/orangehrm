@@ -1,4 +1,4 @@
-Feature: To add a new user
+Feature: To Add a New User
 
   Background: Login Website
     Given User should go to login page
@@ -19,13 +19,6 @@ Feature: To add a new user
     And Admin confirm the password <password>
     Then Admin click save button
     Then Page shows Welcome Admin type
-
-    Examples: 
-      | employee_name    | user_name       | password            |
-      | "Linda Anderson" | "LindaAnderson" | "LindaAnderson123!" |
-	
-	@loginNewUser @regression
-  Scenario Outline: As an User can login
     Given Admin should logout
     And User enter the username <user_name>
     And User enter the password <password>
@@ -33,5 +26,7 @@ Feature: To add a new user
     Then Page shows Welcome Linda type
 
     Examples: 
-      | user_name       | password            |
-      | "LindaAnderson" | "LindaAnderson123!" |
+      | employee_name    | user_name       | password            |
+      | "Linda Anderson" | "LindaAnderson" | "LindaAnderson123!" |
+	
+	

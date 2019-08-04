@@ -15,13 +15,13 @@ import cucumber.api.java.Before;
 
 public class Hooks {
 	private static WebDriver driver;
+
 	@Before
 	public void setUp(Scenario scenario) throws MalformedURLException {
 		driver = Driver.getDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
-
 
 	@After
 	public void tearDown(Scenario scenario) {
@@ -31,6 +31,6 @@ public class Hooks {
 			// adding the screenshot to the report
 			scenario.embed(screenshot, "image/png");
 		}
-		 Driver.closeDriver();
+		Driver.closeDriver();
 	}
 }

@@ -17,7 +17,8 @@ public class AddNewUser_Step_Definition {
 	LoginPage loginPage = new LoginPage();
 	AdminPage adminPage = new AdminPage();
 	Random random = new Random();
-	int n = random.nextInt(50);
+	final int n = random.nextInt(500);
+	StringBuilder sb = new StringBuilder();
 
 	@Given("Admin click Admin button")
 	public void admin_click_Admin_button() {
@@ -57,7 +58,9 @@ public class AddNewUser_Step_Definition {
 	 */
 	@Then("Admin enter an user name {string}")
 	public void admin_enter_an_user_name(String string) {
-		adminPage.userName.sendKeys(string + n);
+		sb.append(string+n);
+		adminPage.userName.sendKeys(sb);
+
 	}
 
 	@Then("Admin select status as enabled")
@@ -86,8 +89,9 @@ public class AddNewUser_Step_Definition {
 	 */
 	@Then("Page shows Welcome Admin type")
 	public void page_shows_Welcome_Admin_type() {
+		BrowserUtils.waitFor(2);
 		System.out.println(adminPage.welcomeAdmin.getText());
-		assertEquals("Bienvenue Admin", adminPage.welcomeAdmin.getText());
+		assertEquals("Welcome Admin", adminPage.welcomeAdmin.getText());
 
 	}
 
@@ -99,6 +103,7 @@ public class AddNewUser_Step_Definition {
 
 	@Given("User enter the username {string}")
 	public void user_enter_the_username(String string) {
+		System.out.println(string + n);
 		loginPage.userName.sendKeys(string + n);
 	}
 
@@ -106,12 +111,12 @@ public class AddNewUser_Step_Definition {
 	public void user_enter_the_password(String string) {
 		loginPage.passWord.sendKeys(string);
 	}
-	
+
 	@Then("Page shows Welcome Linda type")
 	public void page_shows_Welcome_Linda_type() {
 		BrowserUtils.waitFor(2);
 		System.out.println(adminPage.welcomeAdmin.getText());
-		assertEquals("Bienvenue Linda", adminPage.welcomeAdmin.getText());
+		assertEquals("Welcome Linda", adminPage.welcomeAdmin.getText());
 	}
 
 }
