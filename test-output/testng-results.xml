@@ -1,101 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="111542" started-at="2019-08-05T18:56:55Z" finished-at="2019-08-05T18:58:47Z">
+  <suite name="Default suite" duration-ms="9595" started-at="2019-08-05T20:47:05Z" finished-at="2019-08-05T20:47:15Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.SmokeRunner@ff5b51f]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="111542" started-at="2019-08-05T18:56:55Z" finished-at="2019-08-05T18:58:47Z">
-      <class name="com.app.orangehrm.runners.CukesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="setUpClass" is-config="true" duration-ms="132" started-at="2019-08-05T18:56:55Z" finished-at="2019-08-05T18:56:55Z">
+    <test name="Default test" duration-ms="9595" started-at="2019-08-05T20:47:05Z" finished-at="2019-08-05T20:47:15Z">
+      <class name="com.app.orangehrm.runners.SmokeRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.orangehrm.runners.SmokeRunner@ff5b51f]" name="setUpClass" is-config="true" duration-ms="136" started-at="2019-08-05T20:47:05Z" finished-at="2019-08-05T20:47:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="28184" started-at="2019-08-05T18:56:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-05T18:57:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["As a Admin create a new user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["To Add a New User"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="20455" started-at="2019-08-05T18:57:23Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-05T18:57:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Delete an user in the table"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Delete an User"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Username] but found [linda.anderson]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Username] but found [linda.anderson]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.app.orangehrm.stepdefinitions.SearchByUsername_Step_Definition.user_is_showed_in_system_users_table(SearchByUsername_Step_Definition.java:33)
-at ✽.User is showed in system users table "linda.anderson"(file:src/test/resources/com/orangehrm/features/DeleteUserInTable.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="18760" started-at="2019-08-05T18:57:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-05T18:58:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Delete users in the table"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Delete an User"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="17719" started-at="2019-08-05T18:58:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-05T18:58:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Delete all users in the table"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Delete an User"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="6072" started-at="2019-08-05T18:58:20Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-05T18:58:26Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.SmokeRunner@ff5b51f]" name="runScenario" duration-ms="9348" started-at="2019-08-05T20:47:05Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-05T20:47:15Z">
           <params>
             <param index="0">
               <value>
@@ -111,44 +30,11 @@ at ✽.User is showed in system users table "linda.anderson"(file:src/test/resou
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="runScenario" duration-ms="20028" started-at="2019-08-05T18:58:26Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-05T18:58:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Title of your scenario"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search User By Username"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Username] but found [LindaAnderson]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Username] but found [LindaAnderson]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.app.orangehrm.stepdefinitions.SearchByUsername_Step_Definition.user_is_showed_in_system_users_table(SearchByUsername_Step_Definition.java:33)
-at ✽.User is showed in system users table "LindaAnderson"(file:src/test/resources/com/orangehrm/features/SearchByUsername.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@ff5b51f]" name="tearDownClass" is-config="true" duration-ms="111" started-at="2019-08-05T18:58:47Z" finished-at="2019-08-05T18:58:47Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.orangehrm.runners.SmokeRunner@ff5b51f]" name="tearDownClass" is-config="true" duration-ms="40" started-at="2019-08-05T20:47:15Z" finished-at="2019-08-05T20:47:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.app.orangehrm.runners.CukesRunner -->
+      </class> <!-- com.app.orangehrm.runners.SmokeRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
