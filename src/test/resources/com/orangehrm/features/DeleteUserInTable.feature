@@ -19,3 +19,14 @@ Feature: Delete an User
     Examples: 
       | user_name   |
       | "GMESGULVD" |
+
+  @delete
+  Scenario Outline: Delete users in the table
+    Given Admin click Admin button
+    And Page shows System Users module
+    Then Admin select users <user_name> in table
+		And User click delete button
+		
+    Examples: 
+      | user_name                           |
+      | "hannah.flores" && "jasmine.morgan" |
