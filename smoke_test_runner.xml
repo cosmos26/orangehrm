@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ORANGEHRM Regression Automation" verbose="2">
+
+	<test name="Automated tests">
+		<classes>
+			<class name ="com.app.orangehrm.runners.SmokeTestRunner"></class>
+		</classes>
+	</test>
+ 
+ 
+</suite>
