@@ -6,6 +6,6 @@ Feature: Login
     And User enter the password
     And User click the login button
 
-  @login @regression
+  @login @regression @smoke
   Scenario: User can login application
     Then User can see the Home Page
