@@ -1,8 +1,12 @@
 package com.app.orangehrm.pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import com.app.orangehrm.utilities.Driver;
@@ -34,12 +38,15 @@ public class AdminPage {
 
 	@FindBy(xpath = "//*[@id=\"btnDelete\"]")
 	public WebElement deleteButton;
-	
-	@FindBy(xpath="//*[@id=\"dialogDeleteBtn\"]")
+
+	@FindBy(xpath = "//*[@id=\"dialogDeleteBtn\"]")
 	public WebElement deleteButtonDialogOk;
 
-	@FindBy(xpath = "//*[@id=\"resultTable\"]/tbody/tr/td[2]")
+	@FindBy(xpath = "//table[@id='resultTable']//th[2]")
 	public WebElement usernameInTable;
+
+	@FindBy(xpath = "//table[@id='resultTable']//th[1]")
+	public WebElement selectUsersInTable;
 
 	@FindBy(xpath = "//*[@name=\"chkSelectAll\"]")
 	public WebElement selectAllUsersInTable;
@@ -74,4 +81,7 @@ public class AdminPage {
 	@FindBy(linkText = "Logout")
 	public WebElement logoutButton;
 
+	public List<WebElement> userNameColumns = Driver.getDriver().findElements(By.xpath("//table[@id='resultTable']//tr//td[2]"));
+
+	public List<WebElement> checkBoxColumns = Driver.getDriver().findElements(By.xpath("//table[@id='resultTable']//tr//td[1]"));
 }
