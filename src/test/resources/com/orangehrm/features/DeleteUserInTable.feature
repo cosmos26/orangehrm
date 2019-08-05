@@ -17,16 +17,23 @@ Feature: Delete an User
     And User click delete button
 
     Examples: 
-      | user_name   |
-      | "GMESGULVD" |
+      | user_name        |
+      | "linda.anderson" |
 
-  @delete
+  @deleteUsers @regression
   Scenario Outline: Delete users in the table
     Given Admin click Admin button
     And Page shows System Users module
     Then Admin select users <user_name> in table
-		And User click delete button
-		
+    And User click delete button
+
     Examples: 
       | user_name                           |
       | "hannah.flores" && "jasmine.morgan" |
+
+  @deleteUsers @regression
+  Scenario: Delete all users in the table
+    Given Admin click Admin button
+    And Page shows System Users module
+    And User select user in the table
+    And User click delete button

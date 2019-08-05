@@ -12,7 +12,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
-<dependencies>
+	<dependencies>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
@@ -72,4 +72,76 @@
 			<version>2.11.0</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+					<includes>
+						<include>**/*CukesRunner.java</include>
+						<include>**/*FailedScenarios.java</include>
+					</includes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- this line tell maven surefire plugin which file should be executed -->
+						<!--suppress UnresolvedMavenProperty -->
+						<suiteXmlFile>regression_test_runner.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<testFailureIgnore>true</testFailureIgnore>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- this line tell maven surefire plugin which file should be executed -->
+						<!--suppress UnresolvedMavenProperty -->
+						<suiteXmlFile>smoke_test_runner.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<testFailureIgnore>true</testFailureIgnore>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>4.8.0</version>
+				<executions>
+					<execution>
+						<id>execution</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<projectName>TestProject</projectName>
+							<!-- path to the report that will be generated -->
+							<outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
+							<!-- path to the json file that will be used to generate report -->
+							<!-- it has to match the one on the cukesrunner -->
+							<cucumberOutput>${project.build.directory}/target/cucumber.json</cucumberOutput>
+
+						</configuration>
+					</execution>
+				</executions>
+
+			</plugin>
+		</plugins>
+	</build>
 </project>
