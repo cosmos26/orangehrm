@@ -30,11 +30,13 @@
 			<version>3.141.59</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
 		<dependency>
 			<groupId>net.masterthought</groupId>
-			<artifactId>cucumber-sandwich</artifactId>
-			<version>4.5.0</version>
+			<artifactId>maven-cucumber-reporting</artifactId>
+			<version>4.8.0</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -104,7 +106,7 @@
 			<plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>4.5.0</version>
+				<version>4.8.0</version>
 				<executions>
 					<execution>
 						<id>execution</id>
