@@ -73,6 +73,13 @@
 		</dependency>
 	</dependencies>
 
+	<repositories>
+		<repository>
+			<id>oracle</id>
+			<url>http://www.datanucleus.org/downloads/maven2/</url>
+		</repository>
+	</repositories>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -80,6 +87,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -92,8 +100,7 @@
 					</includes>
 				</configuration>
 			</plugin>
-			
-			
+
 			<plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
@@ -112,11 +119,9 @@
 							<!-- path to the json file that will be used to generate report -->
 							<!-- it has to match the one on the cukesrunner -->
 							<cucumberOutput>${project.build.directory}/target/cucumber.json</cucumberOutput>
-
 						</configuration>
 					</execution>
 				</executions>
-
 			</plugin>
 		</plugins>
 	</build>
