@@ -119,6 +119,9 @@
 							<!-- path to the json file that will be used to generate report -->
 							<!-- it has to match the one on the cukesrunner -->
 							<cucumberOutput>${project.build.directory}/target/cucumber.json</cucumberOutput>
+							<jsonFiles>
+								<param>**/*.json</param>
+							</jsonFiles>
 						</configuration>
 					</execution>
 				</executions>
