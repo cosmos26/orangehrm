@@ -33,7 +33,7 @@
 		<dependency>
 			<groupId>net.masterthought</groupId>
 			<artifactId>cucumber-sandwich</artifactId>
-			<version>4.7.0</version>
+			<version>4.5.0</version>
 		</dependency>
 
 		<dependency>
@@ -104,7 +104,7 @@
 			<plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>4.8.0</version>
+				<version>4.5.0</version>
 				<executions>
 					<execution>
 						<id>execution</id>
