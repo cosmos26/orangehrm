@@ -31,9 +31,4 @@ Feature: Delete an User
       | user_name                           |
       | "hannah.flores" && "jasmine.morgan" |
 
-  @deleteUsers @regression
-  Scenario: Delete all users in the table
-    Given Admin click Admin button
-    And Page shows System Users module
-    And User select user in the table
-    And User click delete button
+ 
