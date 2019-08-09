@@ -90,18 +90,7 @@
 				<version>3.8.1</version>
 			</plugin>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M3</version>
-				<configuration>
-					<testFailureIgnore>true</testFailureIgnore>
-					<includes>
-						<include>**/*CukesRunner.java</include>
-						<include>**/*FailedScenarios.java</include>
-					</includes>
-				</configuration>
-			</plugin>
+		
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -116,18 +105,6 @@
 				</configuration>
 			</plugin>
 			
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M3</version>
-				<configuration>
-					<testFailureIgnore>true</testFailureIgnore>
-					<includes>
-						<include>**/*SmokeRunner.java</include>
-						<include>**/*FailedScenarios.java</include>
-					</includes>
-				</configuration>
-			</plugin>
 
 			<plugin>
 				<groupId>net.masterthought</groupId>
