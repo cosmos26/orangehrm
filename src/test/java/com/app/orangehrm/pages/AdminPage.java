@@ -42,7 +42,7 @@ public class AdminPage {
 	@FindBy(xpath = "//*[@id=\"dialogDeleteBtn\"]")
 	public WebElement deleteButtonDialogOk;
 
-	@FindBy(xpath = "//table[@id='resultTable']//th[2]")
+	@FindBy(xpath = "//table[@id='resultTable']//td[2]")
 	public WebElement usernameInTable;
 
 	@FindBy(xpath = "//table[@id='resultTable']//th[1]")

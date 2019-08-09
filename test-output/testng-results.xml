@@ -1,20 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9595" started-at="2019-08-05T20:47:05Z" finished-at="2019-08-05T20:47:15Z">
+  <suite name="Default suite" duration-ms="96117" started-at="2019-08-09T00:51:04Z" finished-at="2019-08-09T00:52:40Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.SmokeRunner@ff5b51f]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@56235b8e]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="9595" started-at="2019-08-05T20:47:05Z" finished-at="2019-08-05T20:47:15Z">
-      <class name="com.app.orangehrm.runners.SmokeRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.orangehrm.runners.SmokeRunner@ff5b51f]" name="setUpClass" is-config="true" duration-ms="136" started-at="2019-08-05T20:47:05Z" finished-at="2019-08-05T20:47:05Z">
+    <test name="Default test" duration-ms="96117" started-at="2019-08-09T00:51:04Z" finished-at="2019-08-09T00:52:40Z">
+      <class name="com.app.orangehrm.runners.CukesRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@56235b8e]" name="setUpClass" is-config="true" duration-ms="130" started-at="2019-08-09T00:51:04Z" finished-at="2019-08-09T00:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.SmokeRunner@ff5b51f]" name="runScenario" duration-ms="9348" started-at="2019-08-05T20:47:05Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-05T20:47:15Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@56235b8e]" name="runScenario" duration-ms="24839" started-at="2019-08-09T00:51:04Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-09T00:51:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a Admin create a new user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Add a New User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@56235b8e]" name="runScenario" duration-ms="20294" started-at="2019-08-09T00:51:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-09T00:51:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete an user in the table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete an User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@56235b8e]" name="runScenario" duration-ms="22451" started-at="2019-08-09T00:51:49Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-09T00:52:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete users in the table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete an User"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LT0H2AE', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\Halil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 135aebc27bf3f589537772226ed2afea]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LT0H2AE', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\Halil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 135aebc27bf3f589537772226ed2afea
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy16.click(Unknown Source)
+at com.app.orangehrm.stepdefinitions.DeleteUser_Step_Definition.user_click_delete_button(DeleteUser_Step_Definition.java:35)
+at ✽.User click delete button(file:src/test/resources/com/orangehrm/features/DeleteUserInTable.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@56235b8e]" name="runScenario" duration-ms="5761" started-at="2019-08-09T00:52:12Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-09T00:52:18Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +118,71 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.orangehrm.runners.SmokeRunner@ff5b51f]" name="tearDownClass" is-config="true" duration-ms="40" started-at="2019-08-05T20:47:15Z" finished-at="2019-08-05T20:47:15Z">
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.orangehrm.runners.CukesRunner@56235b8e]" name="runScenario" duration-ms="22443" started-at="2019-08-09T00:52:18Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-09T00:52:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search User By Username"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='resultTable']//td[2]"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LT0H2AE', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\Halil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 475ecb8d05f15035472b0c244884b9f5
+*** Element info: {Using=xpath, value=//table[@id='resultTable']//td[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='resultTable']//td[2]"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LT0H2AE', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\Halil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 475ecb8d05f15035472b0c244884b9f5
+*** Element info: {Using=xpath, value=//table[@id='resultTable']//td[2]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy16.getText(Unknown Source)
+at com.app.orangehrm.stepdefinitions.SearchByUsername_Step_Definition.user_is_showed_in_system_users_table(SearchByUsername_Step_Definition.java:30)
+at ✽.User is showed in system users table "LindaAnderson"(file:src/test/resources/com/orangehrm/features/SearchByUsername.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.orangehrm.runners.CukesRunner@56235b8e]" name="tearDownClass" is-config="true" duration-ms="103" started-at="2019-08-09T00:52:40Z" finished-at="2019-08-09T00:52:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.app.orangehrm.runners.SmokeRunner -->
+      </class> <!-- com.app.orangehrm.runners.CukesRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

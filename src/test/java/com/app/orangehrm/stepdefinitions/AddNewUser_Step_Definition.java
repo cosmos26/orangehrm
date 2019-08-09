@@ -16,8 +16,8 @@ import cucumber.api.java.en.When;
 public class AddNewUser_Step_Definition {
 	LoginPage loginPage = new LoginPage();
 	AdminPage adminPage = new AdminPage();
-	Random random = new Random();
-	final int n = random.nextInt(500);
+	static Random random = new Random();
+	static int n = random.nextInt(500);
 	StringBuilder sb = new StringBuilder();
 
 	@Given("Admin click Admin button")

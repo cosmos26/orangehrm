@@ -16,7 +16,7 @@ public class SearchByUsername_Step_Definition {
 	@Then("Admin enter an user name {string} in system users module")
 	public void admin_enter_an_user_name_in_system_users_module(String string) {
 
-		adminPage.usernameSearchBox.sendKeys(string);
+		adminPage.usernameSearchBox.sendKeys(string+AddNewUser_Step_Definition.n);
 
 	}
 
@@ -30,7 +30,7 @@ public class SearchByUsername_Step_Definition {
 		String actualResult = adminPage.usernameInTable.getText();
 		System.out.println("Checking username in table "+adminPage.usernameInTable.getText());
 		BrowserUtils.waitFor(2);
-		assertEquals(string, actualResult);
+		assertEquals(string+AddNewUser_Step_Definition.n, actualResult);
 
 	}
 }
