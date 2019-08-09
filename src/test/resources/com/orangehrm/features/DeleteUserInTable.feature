@@ -17,8 +17,8 @@ Feature: Delete an User
     And User click delete button
 
     Examples: 
-      | user_name        |
-      | "linda.anderson" |
+      | user_name       |
+      | "LindaAnderson" |
 
   @deleteUsers @regression
   Scenario Outline: Delete users in the table
@@ -30,5 +30,3 @@ Feature: Delete an User
     Examples: 
       | user_name                           |
       | "hannah.flores" && "jasmine.morgan" |
-
- 

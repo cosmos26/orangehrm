@@ -28,5 +28,4 @@ Feature: To Add a New User
     Examples: 
       | employee_name    | user_name       | password            |
       | "Linda Anderson" | "LindaAnderson" | "LindaAnderson123!" |
-	
-	
+      

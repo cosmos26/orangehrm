@@ -4,8 +4,6 @@
 	<test name="Automated tests">
 		<classes>
 			<class name ="com.app.orangehrm.runners.RegressionRunner"></class>
-			<class name ="com.app.orangehrm.runners.CukesRunner"></class>
-			<class name ="com.app.orangehrm.runners.SmokeTestRunner"></class>
 		</classes>
 	</test>
 
