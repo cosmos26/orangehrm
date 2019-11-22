@@ -23,7 +23,8 @@ public class AdminPage {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
 	}
-
+	
+	//Page object below
 	@FindBy(xpath = "//*[@id=\"menu_admin_viewAdminModule\"]")
 	public WebElement adminButton;
 

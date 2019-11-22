@@ -6,7 +6,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(plugin = { "pretty", "html:target/cucumber-report",
 		"json:target/cucumber.json", "rerun:target/rerun.txt" }, 
-		tags = "",
+		tags = "@addNewUser",
 		features = { "src/test/resources/com/orangehrm/features" }, 
 		glue = "com/app/orangehrm/stepdefinitions",
 		dryRun = false

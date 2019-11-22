@@ -6,7 +6,7 @@ Feature: Delete an User
     And User enter the password
     And User click the login button
 
-  @deleteUser @regression
+  @deleteUser @regression @tc1
   Scenario Outline: Delete an user in the table
     Given Admin click Admin button
     And Page shows System Users module
@@ -20,7 +20,7 @@ Feature: Delete an User
       | user_name       |
       | "LindaAnderson" |
 
-  @deleteUsers @regression
+  @deleteUsers @regression @tc2
   Scenario Outline: Delete users in the table
     Given Admin click Admin button
     And Page shows System Users module

@@ -6,6 +6,9 @@ Feature: Login
     And User enter the password
     And User click the login button
 
-  @login @regression @smoke
+  @login @regression @smoke @tet1
   Scenario: User can login application
     Then User can see the Home Page
+  Scenario: User can login application
+    Then User can see the Home Page
+    
