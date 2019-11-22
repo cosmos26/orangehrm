@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LeftPanelMenu {
+	
 	public static WebElement element = null;
 	
 	public static WebElement itemPIM (WebDriver driver) {
